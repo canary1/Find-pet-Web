@@ -23,3 +23,6 @@ i{font-style:normal;}
 img,div,ul,li{
 	behavior:url(../css/iepngfix.htc);
 }
+.borbottom{
+	border-bottom: 2px solid #CCC;
+}

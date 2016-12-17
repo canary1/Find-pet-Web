@@ -1,4 +1,4 @@
-﻿body{
+body{
 	behavior:url(hover.htc);    /*兼容IE6A标签外其它元素不能使用hover的现象*/
 }
 /*左边浮动窗口设计*/
@@ -182,7 +182,7 @@
 	float: left;
 }
 /*居中显示*/
-.news,.find_pet,.lost_pet,.honor{
+.news,.find_pet,.lost_pet,.honor,.notice,.hot{
 	width: 968px;
 	margin: 0 auto;
 }
@@ -207,13 +207,14 @@
 	border: 2px solid #21D882;
 	margin-left:862px;
 	overflow: hidden;
+	width: 40px;
+	padding:0 20px;
 }
 .index_more a{
 	display: block;
 	color: #21D882;
 	font-size: 20px;
 	font-family: "微软雅黑"；
-	
 }
 /*最新资讯内容区*/
 .news .news_item{
@@ -313,7 +314,6 @@
 }
 .footer{
 	width: 100%;
-	height: 58px;
 	background-color: #F5F5F5;
 	margin-top: 80px;
 	text-align: center;
@@ -339,4 +339,206 @@
 	height: 40px;
 	line-height: 40px;
 	font-weight: bold;
+}
+
+/*最新资讯页面设计*/
+/*标题样式*/
+.news_title{
+	margin:40px 0;
+	font-family: "微软雅黑";
+}
+.news_title .news_title_ch{
+	font-size:24px;
+}
+.news_title .news_title_en{
+	display: block;
+	height: 28px;
+	font-size: 18px;
+	line-height: 28px;
+}
+/*本站公告内容区*/
+.notice .notice_list .notice_item{
+	height: 84px;
+	border-bottom: 2px solid #ccc;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.notice .notice_list .notice_item dt img{
+	display: block;
+	width: 100px;
+	height: 58px;
+	overflow: hidden;
+	float: left;
+}
+.notice .notice_list .notice_item dd{
+	display: block;
+	width: 728px;
+	float: left;
+	padding-left: 20px;
+}
+.notice .notice_list .notice_item dd h3 a{
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #000;
+}
+.notice .notice_list .notice_item dd h3 a:hover{
+	color: #21D882;
+}
+.notice .notice_list .notice_item dd i{
+	display: block;
+	padding: 20px 0;
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 18px;
+	font-style: normal;
+}
+.notice .notice_list .notice_item span{
+	display: block;
+	float: right;
+	height: 50px;
+	width: 50px;
+	background:url(../imgs/icon/eye.jpg) no-repeat left top;
+	line-height: 84px;
+	text-align: center;
+	border: 2px solid #666;
+	-webkit-box-shadow: 5px 5px 5px #666;   /*阴影设置，值分别代表水平偏移值，垂直偏移值，模糊度，阴影颜色*/
+	-moz-box-shadow:5px 5px 2px #666;
+	cursor: pointer;
+}
+/*本站公告翻页布局*/
+.notice .notice_page{
+	width: 50%;
+	height: 16px;
+	line-height: 16px;
+	margin-left: 25%;
+}
+.notice .notice_page li{
+	float: left;
+	width: 20px;
+	font-family: "微软雅黑"；
+	font-size:14;
+	margin: 0 10px;
+}
+.notice .notice_page li a{
+	display: block;
+	width: 20px;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+}
+.notice .notice_page li a:hover{
+	color: #21D882;
+}
+.page_active{
+	background-color: #CCC;
+}
+/*热点专题左侧布局*/
+.hot .hot_list_left{
+	width: 642px;
+	float: left;
+}
+.hot .hot_list_left .left_item{
+	display: block;
+	height: 162px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.hot .hot_list_left .left_item dt a img{
+	width:240px;
+	height: 162px;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+.hot .hot_list_left .left_item dt a img:hover{
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+.hot .hot_list_left .left_item dd{
+	display:block;
+	padding-left: 260px;
+	margin-top: -162px;
+}
+.hot .hot_list_left .left_item dd h3 a{
+	display: block;
+	font-family: "微软雅黑";
+	font-size:14px;
+	color: #000;
+	height: 50px;
+	line-height: 50px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.hot .hot_list_left .left_item dd h3 a:hover{
+	text-decoration: underline;
+}
+.hot .hot_list_left .left_item dd p{
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 20px;
+}
+/*热点专题右侧布局*/
+.hot .hot_list_right{
+	width: 306px;
+	float: right;
+}
+.hot .hot_list_right .right_item{
+	display: block;
+	height: 344px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.hot .hot_list_right .right_item dt a img{
+	display: block;
+	height: 162px;
+	width: 306px;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+.hot .hot_list_right .right_item dt a img:hover{
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+.hot .hot_list_right .right_item dd h3 a{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #000;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.hot .hot_list_right .right_item dd h3 a:hover{
+	text-decoration: underline;
+}
+.hot .hot_list_right .right_item dd p{
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 20px;
+}
+/*定义不同背景色*/
+.bg_one{
+	background-color: #41EECB;
+}
+.bg_two{
+	background-color: #F9F296;
+}
+.bg_three{
+	background-color: #FCD78E;
+}
+/*热点专题翻页布局*/
+.hot .hot_page span{
+	display: block;
+	height: 28px;
+	width: 28px;
+	float: right;
+	margin: 0 10px;
+	cursor: pointer;
+}
+.hot .hot_front{
+	background: url(../imgs/icon/hot_page.jpg) no-repeat left top;
+}
+.hot .hot_next{
+	background: url(../imgs/icon/hot_page.jpg) no-repeat -28px top;
 }
