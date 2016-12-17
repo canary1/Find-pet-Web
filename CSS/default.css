@@ -1,0 +1,25 @@
+﻿body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{
+	margin:0;
+	padding:0;
+}
+body{font-size:14px;font-family: "宋体";}
+img{border:none;}
+li{list-style:none;}
+input,select,textaera{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+i{font-style:normal;}
+/*清除浮动*/
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.clearfix{zoom:1;}
+.right-border{
+	border-right: 1px solid #000;
+}
+/*IE6图片不透明解决方法*/
+img,div,ul,li{
+	behavior:url(../css/iepngfix.htc);
+}

@@ -1,0 +1,342 @@
+﻿body{
+	behavior:url(hover.htc);    /*兼容IE6A标签外其它元素不能使用hover的现象*/
+}
+/*左边浮动窗口设计*/
+.slider{
+	width: 62px;
+	font-family: "微软雅黑";
+	font-size: 10px;
+	background-color: #21D882;
+	position: fixed;
+	left: 0;
+	top: 150px;
+	z-index: 100;
+}
+.slider .slider_item{
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.slider .slider_item li img{
+	display: block;
+}
+.slider .slider_item li a{
+	display: block;
+	color: #FFF;
+	padding-bottom: 10px;
+}
+.slider .slider_item li:hover{
+	background-color: #E8813C;
+	font-weight: bold;
+}
+/*右侧楼层链接设计*/
+.floor_item{
+	position: fixed;
+	top: 150px;
+	right: 0;
+	z-index: 100;
+	width: 62px;
+	overflow: hidden;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	text-align: center;
+	background-color: #515254;
+}
+.floor_item li{
+	height: 40px;
+	line-height: 40px;
+}
+.floor_item li a{
+	display: block;
+	color: #FFF;
+	border-bottom: 1px solid #515254;
+}
+.floor_item li a:hover{
+	background-color: #21D882;
+	border-bottom: 1px solid #FFF;
+}
+.back_top{
+	height: 18px;
+	background:url(../imgs/icon/back_top.png) no-repeat left top;
+	background-color: #CCC;
+	padding-top: 18px;
+	/*解决IE6中png图片不透明的问题*/
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="imgs/icon/back_top.png");  
+	_background:none;  
+}
+.back_top:hover{
+	background-color: #21D882;
+}
+/*top*/
+.top{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	background-color: #F5F5F5;
+	font-size: 12px;
+	color: #5F5F5F;
+	padding: 0 164px 0 968px;
+	overflow: hidden;
+}
+.top label{
+	display: block;
+	float: left;
+}
+.top .login{
+	float: left;
+}
+.top .login li{
+	float: left;
+	height: 35px;
+	line-height: 35px;
+}
+.top .login li a{
+	color: #5F5F5F;
+	display: block;
+	padding:0 0 0 8px;
+}
+.top .login li a:hover{
+	color: red;
+}
+/*nav*/
+.nav{
+	height: 72px;
+	width: 100%;
+	padding-left: 100px;
+	line-height: 72px;
+	overflow: hidden;
+}
+.nav .nav_logo{
+	vertical-align: center;
+	height: 72px;
+	line-height: 72px;
+}
+.nav .nav_logo .logo{
+	display: inline-block;
+	width: 272px;
+	height: 72px;
+	background: url(../imgs/logo.jpg) no-repeat;
+	float: left;
+}
+.nav .nav_logo .location{
+	display: block;
+	float: left;
+	height: 72px;
+	width: 92px;
+	background: url(../imgs/icon/location.jpg) no-repeat 24px center;
+	text-indent: 48px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+/*导航区域样式*/
+.nav .nav_list{
+	margin: -72px 0 0 0;
+	*float:right;   /*兼容IE6,IE7*/
+	padding-right: 300px;
+}
+.nav .nav_list li{
+	_width:90px;    /*兼容IE6宽度自适应问题*/
+	float: left;
+}
+.nav .nav_list li a{
+	display: block;
+	height: 72px;
+	line-height: 72px;
+	padding: 0 24px 0 24px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #3A3A3A;
+}
+.nav .nav_list li a:hover,.nav .nav_list li a:active{
+	background-color: #F5F5F5;
+	color: #21D882;
+	border-top: 4px solid #21D882;
+}
+/*banner区域*/
+.banner .banner_list{
+	height: 322px;
+	width: 1366px;
+	overflow: hidden;
+	position: relative;
+}
+.banner .banner_list .bar{
+	position: absolute;
+	float: left;
+	bottom:14px;
+	right: 260px;
+	z-index: 10;
+}
+.banner .banner_list .bar span{
+	display:inline-block;
+	height: 6px;
+	width: 36px;
+	background-color: #FFF;
+	margin-right: 10px;
+}
+.banner .banner_list .bar span.active{
+	background-color: #21D882;
+}
+.banner .banner_list li{
+	float: left;
+}
+/*居中显示*/
+.news,.find_pet,.lost_pet,.honor{
+	width: 968px;
+	margin: 0 auto;
+}
+/*index页面标题样式统一*/
+.index_title{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	width: 366px;
+	margin: 40px auto;
+	margin-bottom: 0;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	background:url(../imgs/icon/news_title.jpg) no-repeat;
+	text-indent: 148px;
+}
+/*index页面more样式统一*/
+.index_more{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	border: 2px solid #21D882;
+	margin-left:862px;
+	overflow: hidden;
+}
+.index_more a{
+	display: block;
+	color: #21D882;
+	font-size: 20px;
+	font-family: "微软雅黑"；
+	
+}
+/*最新资讯内容区*/
+.news .news_item{
+	padding: 10px;
+}
+.news .news_item li{
+	float: left;
+	padding: 10px 25px 10px 0;
+	width: 290px;
+	overflow: hidden;
+}
+.news .news_item li img{
+	display: block;
+	width: 290px;
+	height: 172px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.news .news_item li a{
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-family: "微软雅黑";
+	color: #000;
+	font-size: 12px;
+	border-bottom: 2px solid #21D882;
+	white-space: nowrap;
+}
+.news .news_item li a:hover{
+	color: red;
+	text-decoration: underline;
+}
+/*主人寻宠内容区*/
+.find_pet_list .find_pet_item,.lost_pet_list .lost_pet_item{
+	width: 170px;
+	padding: 20px 20px 20px 0;
+	background:url(../imgs/findPet/bg_pic.jpg) no-repeat left top;
+	float: left;
+}
+.find_pet_list .find_pet_item dt,.lost_pet_list .lost_pet_item dt{
+	display: block;
+	padding: 0 10px;
+}
+.find_pet_list .find_pet_item dt img,.lost_pet_list .lost_pet_item dt img{
+	display: block;
+	height: 144px;
+	width: 150px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.find_pet_list .find_pet_item dt a,.lost_pet_list .lost_pet_item dt a{
+	display: block;
+	height: 34px;
+	line-height: 17px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+	padding: 10px 0;
+	overflow: hidden;
+}
+.find_pet_list .find_pet_item dt a:hover,.lost_pet_list .lost_pet_item dt a:hover{
+	color: red;
+	text-decoration: underline;
+}
+.find_pet_list .find_pet_item dd,.lost_pet_list .lost_pet_item dd{
+	height: 12px;
+	padding-right: 10px;
+	font-size: 12px;
+	font-family: "宋体";
+	text-align: right;
+}
+/*爱心光荣榜区域样式*/
+.honor .honor_item{
+	height: 128px;
+	width: 952px;
+	padding: 10px;
+	padding-right: 0;
+	margin-top: 30px;
+	border: 1px solid #CCC;
+}
+.honor .honor_item li{
+	float: left;
+	padding-right: 22px;
+}
+
+.honor .honor_item li a img{
+	display: block;
+	height: 128px;
+	width: 216px;
+	overflow: hidden;
+}
+.honor .honor_item li a img:hover{
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+.footer{
+	width: 100%;
+	height: 58px;
+	background-color: #F5F5F5;
+	margin-top: 80px;
+	text-align: center;
+	padding: 36px 0;
+	font-size: 14px;
+	font-family: "宋体";
+}
+.footer .footer_item li{
+	display: inline-block;
+	line-height: 22px;
+}
+.footer .footer_item li a{
+	display: block;
+	padding:0 30px;
+	color: #000;
+}
+.footer .footer_item li a:hover{
+	color: red;
+	text-decoration: underline;
+}
+.footer span{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+}
